@@ -33,6 +33,7 @@ $router = new Core\Router();
 
 // Add the routes
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
+$router->add('admin', ['namespace' => 'Admin','controller' => 'Products', 'action' => 'index']);
 $router->add('{controller}/{action}');
 $router->add('{controller}/',['action'=>'index']);
         // {?P<\controller>[a-z-]+} / {?P<\action>[a-z-]+}
